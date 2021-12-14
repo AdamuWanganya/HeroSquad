@@ -12,7 +12,6 @@ public class Heroes {
     private static int id;
     private boolean squadMember;
 
-
     public Heroes(String name, int age, String power, String weakness) {
         this.name=name;
         this.age=age;
@@ -26,16 +25,51 @@ public class Heroes {
         return this.name;
     }
 
-
     public int getAge() {
         return this.age;
     }
 
-    public String getPower(){
+    public String getPower() {
         return this.power;
     }
 
     public String getWeakness() {
-        return weakness;
+        return this.weakness;
+    }
+
+    public static ArrayList<Heroes> getAllInstances() {
+        return instances;
+    }
+
+    public static int getId() {
+        return id;
+    }
+
+    public boolean isSquadMember() {
+        return squadMember;
+    }
+
+    public void updateHeroStatus(boolean squadMember){
+        this.squadMember=squadMember;
+    }
+
+    public void deleteHero() {
+        instances.remove(id-1);
+    }
+
+    public static void clearAllHeroes() {
+        instances.clear();
+    }
+
+    public static Heroes findById(int id) {
+        try {
+            return instances.get(id-1);
+        } catch (IndexOutOfBoundsException exception) {
+            return null;
+        }
+    }
+
+    public static void setId(int id) {
+        Heroes.id = id;
     }
 }
