@@ -31,4 +31,10 @@ public class HeroesTest {
         Heroes hero = new Heroes("Adamu", 5, "accuracy", "lasting");
         assertEquals(5, hero.getAge());
     }
+
+    @Test
+    public void returnsHeroPowerCorrectly_String() {
+        Heroes hero = new Heroes("Adamu", 5, "accuracy", "lasting");
+        assertEquals("accuracy", hero.getPower());
+    }
 }

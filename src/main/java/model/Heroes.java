@@ -30,4 +30,8 @@ public class Heroes {
     public int getAge() {
         return this.age;
     }
+
+    public String getPower(){
+        return this.power;
+    }
 }
