@@ -21,4 +21,13 @@ public class Heroes {
         instances.add(this);
         this.id =instances.size();
     }
+
+    public String getName() {
+        return this.name;
+    }
+
+
+    public int getAge() {
+        return this.age;
+    }
 }

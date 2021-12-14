@@ -15,14 +15,20 @@ public class HeroesTest {
 
     @Test
     public void NewHeroesInstantiatesHeroObjectsCorrectly_true() {
-        Heroes hero = new Heroes("Adamu", 5, "accurancy", "lasting");
+        Heroes hero = new Heroes("Adamu", 5, "accuracy", "lasting");
         assertTrue(hero instanceof Heroes);
     }
 
 
     @Test
     public void returnsHeroNameCorrectly_String() {
-        Heroes hero = new Heroes("Adamu", 5, "accurancy", "lasting");
-        assertEquals("Emma", hero.getName());
+        Heroes hero = new Heroes("Adamu", 5, "accuracy", "lasting");
+        assertEquals("Adamu", hero.getName());
+    }
+
+    @Test
+    public void returnsHeroAgeCorrectly_int() {
+        Heroes hero = new Heroes("Adamu", 5, "accuracy", "lasting");
+        assertEquals(5, hero.getAge());
     }
 }
