@@ -1,5 +1,7 @@
 package model;
 
+import java.util.ArrayList;
+
 public class Heroes {
 
     private String name;
@@ -10,6 +12,13 @@ public class Heroes {
     private static int id;
     private boolean squadMember;
 
-    public Heroes(String adamu, int i, String first, String fighter) {
+
+    public Heroes(String name, int age, String power, String weakness) {
+        this.name=name;
+        this.age=age;
+        this.power=power;
+        this.weakness=weakness;
+        instances.add(this);
+        this.id =instances.size();
     }
 }
