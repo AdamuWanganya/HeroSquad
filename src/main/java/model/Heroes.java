@@ -34,4 +34,8 @@ public class Heroes {
     public String getPower(){
         return this.power;
     }
+
+    public String getWeakness() {
+        return weakness;
+    }
 }
