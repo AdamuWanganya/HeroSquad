@@ -15,8 +15,14 @@ public class HeroesTest {
 
     @Test
     public void NewHeroesInstantiatesHeroObjectsCorrectly_true() {
-        Heroes hero = new Heroes("Adamu", 5, "first", "fighter");
+        Heroes hero = new Heroes("Adamu", 5, "accurancy", "lasting");
         assertTrue(hero instanceof Heroes);
     }
 
+
+    @Test
+    public void returnsHeroNameCorrectly_String() {
+        Heroes hero = new Heroes("Adamu", 5, "accurancy", "lasting");
+        assertEquals("Emma", hero.getName());
+    }
 }
