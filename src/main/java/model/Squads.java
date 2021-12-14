@@ -18,3 +18,15 @@ public class Squads {
         squadInstances.add(this);
         this.id = squadInstances.size();
     }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getCause() {
+        return this.cause;
+    }
+
+    public int getSize() {
+        return this.maxSize;
+    }
