@@ -25,6 +25,17 @@ public class App {
         }, new HandlebarsTemplateEngine());
 
     }
+    post("/heroes", (request, response) -> {
+        Map<String, Object> model = new HashMap<String, Object>();
+        String name = request.queryParams("heroName");
+        int age=Integer.parseInt(request.queryParams("heroAge"));
+        String power=request.queryParams("heroPower");
+        String weakness=request.queryParams("heroWeakness");
+        Heroes heroes = new Heroes(name, age, power,weakness);
+        model.put("heroes", heroes);
+        return new ModelAndView(model, "success.hbs");
+        }, new HandlebarsTemplateEngine());
 
 
-}
+
+        }
