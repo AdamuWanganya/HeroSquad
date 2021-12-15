@@ -1,12 +1,7 @@
-{{#partial "styles"}}
-
-    <link rel='stylesheet' href='/css/heroes.css'>
-
-{{/partial}}
 
 {{#partial "content"}}
 
-    <h2>LIST OF HEROES</h2>
+    <h2>LIST OF HEROES!</h2>
 
     {{#if heroes}}
 
@@ -15,7 +10,7 @@
             <div class="card mb-3" id="hero">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img id="heroImage" src="/images/spiderman2.jpg" alt="Hero Image">
+                        <img id="heroImage" src="/images/strike.jpg" alt="Hero Image">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -26,7 +21,7 @@
                                 <li><span>Power: </span>{{power}}</li>
                                 <li><span>Weakness: </span>{{weakness}}</li>
                             </ul>
-                            <!--                                <a href="/heroes/{{id}}/delete"><button class="btn-info">Delete Hero</button></a>-->
+
                         </div>
                     </div>
                 </div>
@@ -35,11 +30,11 @@
         {{/each}}
 
     {{else}}
-        <p id="noHeroes">No Heroes Available!</p>
+        <p id="noHeroes">No Heroes Available!!!</p>
     {{/if}}
 
     {{#if heroes}}
-        <a href="/heroes/delete"><button class="btn-info">Delete All Heroes</button></a>
+        <a href="/heroes/delete"><button class="btn-success">Delete All Heroes</button></a>
     {{/if}}
 
 

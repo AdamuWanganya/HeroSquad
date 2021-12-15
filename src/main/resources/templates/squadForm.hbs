@@ -1,27 +1,23 @@
-{{#partial "styles"}}
 
-    <link rel='stylesheet' href='/css/squadForm.css'>
-
-{{/partial}}
 
 {{#partial "content"}}
 
 
-    <h2>FILL THE FORM BELOW TO CREATE A NEW SQUAD</h2>
+    <h2>CREATE A NEW SQUAD</h2>
     <form action="/squads" method="post">
         <div class="form-group">
             <label for="squadName">Name</label>
-            <input type="text" class="form-control" name="squadName" id="squadName" placeholder="Name of the squad" required>
+            <input type="text" class="form-control" name="squadName" id="squadName" placeholder="Squad Name" required>
         </div>
 
         <div class="form-group">
             <label for="squadCause">Cause</label>
-            <input type="text" class="form-control" name="squadCause" id="squadCause" placeholder="What does this squad fight against?" required>
+            <input type="text" class="form-control" name="squadCause" id="squadCause" placeholder="Squads Purpose" required>
         </div>
 
         <div class="form-group">
             <label for="squadSize">Size Limit</label>
-            <input type="number" class="form-control" name="squadSize" id="squadSize" placeholder="How many heroes should be in this squad?" required>
+            <input type="number" class="form-control" name="squadSize" id="squadSize" placeholder="Number of Members" required>
         </div>
 
         <div class="form-group">
