@@ -12,14 +12,13 @@
 
         {{#each heroes}}
 
-                            <h5>{{name}}</h5>
-                            <hr>
-                            <ul class="card-text">
-                                <li><span>Age: </span>{{age}}</li>
-                                <li><span>Power: </span>{{power}}</li>
-                                <li><span>Weakness: </span>{{weakness}}</li>
-                            </ul>
-
+            <hr>
+            <h5>{{name}}</h5>
+            <ul class="card-text">
+                <li><span>Age: </span>{{age}}</li>
+                <li><span>Power: </span>{{power}}</li>
+                <li><span>Weakness: </span>{{weakness}}</li>
+            </ul>
 
         {{/each}}
 
@@ -28,7 +27,7 @@
     {{/if}}
 
     {{#if heroes}}
-        <a href="/heroes/delete"><button class="btn-success">Delete All Heroes</button></a>
+        <a href="/heroes/delete"><button class="btn-danger">Delete All Heroes</button></a>
     {{/if}}
 
 
