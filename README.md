@@ -1,12 +1,12 @@
-#Heroes-Squad 
+# Heroes-Squad 
 
-##Project Description
+## Project Description
 This is an application that allows the users to create their heroes' name,age,power and weakness furthermore they can create a new squads.
 
-##Author's Information
+## Author's Information
 This project was developed by Adamu Wanganya.
 
-##Set Up Instructions
+## Set Up Instructions
 To set up this project:
 
 GIt Clone the github repository url in your machine i.e - git clone https://github.com/AdamuWanganya/HeroSquad
@@ -15,7 +15,7 @@ Build project
 Build
 Run gradle build to build the project.
 
-##Technologies Used:
+## Technologies Used:
 Java.
 Spark.
 Gradle.
@@ -23,7 +23,7 @@ Maven.
 Bootstrap.
 JUnit.
 
-#License
+# License
 MIT Copyright (c) 2021 Adamu Wanganya
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
